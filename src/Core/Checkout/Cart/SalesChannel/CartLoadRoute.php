@@ -37,6 +37,7 @@ class CartLoadRoute extends AbstractCartLoadRoute
     public function load(Request $request, SalesChannelContext $context): CartResponse
     {
         $token = $request->get('token', $context->getToken());
+
         $taxed = $request->get('taxed', false);
 
         try {
