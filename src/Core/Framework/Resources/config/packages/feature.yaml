@@ -40,3 +40,8 @@ shopware:
         major: false
         toggleable: true
         description: "Experimental! Execute flows after the main unit of work has concluded"
+      - name: DEFERRED_CART_ERRORS
+        default: true
+        major: false
+        toggleable: true
+        description: "Defers cart errors that happen during SalesChannelContext creation"
